@@ -1,3 +1,4 @@
+/* RESETS */
 * {
     padding: 0;
     margin: 0;
@@ -14,33 +15,150 @@ img {
 }
 
 /* COMMON */
-.container {
+main {
     width: 100%;
     height: 100vh;
-    /* DEBUG */
-    background-color:aliceblue;
+}
+
+.container {
+    width: 80%;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: gray;
 }
 /* /COMMON */
 
 
 /* UTILITY */
+.display-flex {
+    display: flex;
+}
 
+.vertical-middle {
+    vertical-align: middle;
+}
+
+/* PALETTE */
+.cl-gray {
+    color: gray;
+}
+
+.cl-lightgray {
+    color: #E2E2E2;
+}
+
+.cl-white {
+    color: white;
+}
+
+.cl-lime {
+    color: #ADFF2F;
+}
+
+/* FONT SIZE */
+.font-size1 {
+    font-size: 1rem;
+}
+
+.font-size2 {
+    font-size: 2rem;
+}
+
+.font-size3 {
+    font-size: 3rem;
+}
+
+/* FONT WEIGHT */
+.font-weight-bold {
+    font-weight: bold;
+}
 /* /UTILITY */
 
 /* MAIN */
 /* SIDEBAR */
 #sidebar {
-    width: 30%;
-    /* DEBUG */
-    height: 800px;
-    background-color: bisque;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
 }
+
+#sidebar.container {
+    padding: 1em;
+}
+
+/* LOGO */
+#logo {
+    width: 70%;
+    padding: 0.5em 0;
+}
+/* /LOGO */
+
+/* MENU */
+.menu {
+    margin: 0.5em 0 2em;
+}
+
+.menu li {
+    margin-bottom: 1em;
+}
+/* /MENU */
+
+/* PLAYLIST */
+.playlist h4 {
+    margin-bottom: 1em;
+}
+
+.create-playlist {
+    align-items: center;    
+}
+
+.create-playlist .plus {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1.2em;
+    vertical-align: middle;
+    background-color: gray;
+}
+
+.create-playlist span {
+    margin-left: 0.5em;
+}
+
+.new-playlist {
+    margin-top: 1em;
+}
+
+.new-playlist li {
+    margin-bottom: 1em;
+}
+/* /PLAYLIST */
+
+/* DOWNLOAD APP - PROFILE */
+.dl-profile .dl {
+    padding: 0.5em 0;
+    border-bottom: 1px solid gray;
+}
+
+.dl-profile .profile {
+    margin-top: 1em;
+}
+/* /DOWNLOAD APP - PROFILE */
 /* /SIDEBAR */
 
 /* HEADER */
 header {
-    width: 70%;
-    height: 80px;
+    width: 100%;
+    height: 70px;
     /* DEBUG */
     background-color: red;
 }
@@ -48,30 +166,38 @@ header {
 
 /* HOME */
 #home {
-    width: 70%;
+    width: 80%;
     /* DEBUG */
-    height: 400px;
+    height: 780px;
     background-color: royalblue;
 }
 /* /HOME */
 
 /* FOOTER */
 footer {
-    width: 100%;
-    height: 200px;
+    height: 80px;
     /* DEBUG */
     background-color: brown;
 }
 /* /FOOTER */
 
-
-
-
-
-
-
-
-
-
 /* /MAIN */
 
+
+
+
+/* MEDIA QUERIES */
+/* SMALL DESKTOP */
+@media screen and (min-width: 1100px) {
+     
+}
+
+/* TABLET */
+@media screen and (min-width: 700px) {
+    
+}
+
+/* PHONE */
+@media screen and (min-width: 600px) {
+    
+}
