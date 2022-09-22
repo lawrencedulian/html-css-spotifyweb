@@ -46,6 +46,31 @@ a {
     opacity: 0;
     color: white;
 }
+
+/* CARD */
+.card {
+    min-width: 150px;
+    margin-right: 1em;
+}
+
+.card img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.title {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: .8rem;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+}
+/* /CARD */
 /* /COMMON */
 
 /* ROOT */
@@ -67,12 +92,24 @@ a {
     vertical-align: middle;
 }
 
+.text-align-start {
+    text-align: start;
+}
+
+.border-circle {
+    border-radius: 50%;
+}
+/* MARGINS */
 .margin-top1 {
     margin-top: 1em;
 }
 
 .margin-right1 {
     margin-right: 1em;
+}
+
+.margin-bottom1 {
+    margin-bottom: 1em;
 }
 /* PALETTE */
 .cl-gray {
@@ -216,6 +253,14 @@ a {
 /* /DOWNLOAD APP - PROFILE */
 /* /SIDEBAR */
 
+/* HOME */
+#home {
+    overflow: scroll;
+    width: calc(100% - var(--sidebar-width));
+    padding-top: 60px;
+    background-color: var(--home-color);
+}
+
 /* HEADER */
 header {
     position: fixed;
@@ -229,13 +274,44 @@ header {
 }
 /* /HEADER */
 
-/* HOME */
-#home {
-    overflow: scroll;
-    width: calc(100% - var(--sidebar-width));
-    padding-top: 60px;
-    background-color: var(--home-color);
+/* HOMEPAGE */
+.homepage {
+    padding: 1em;
 }
+/* HOME-MENU */
+.home-menu {
+    margin-bottom: 2em;
+}
+
+.home-menu ul {
+    display: flex;
+    justify-content: center;
+}
+.home-menu li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: gray;
+    margin-left: 1em;
+}
+/* /HOME-MENU */
+
+/* RECENTLY PLAYED */
+.recently-played {
+    width: calc(100% / 6);
+    display: flex;
+    margin-bottom: 2em;
+}
+/* /RECENTLY PLAYED */
+
+/* TIPS USER and POPULAR ARTIST*/
+.tips-user,
+.popular-artist {
+    width: calc(100% / 2);
+    display: flex;
+    margin-bottom: 2em;
+}
+/* /TIPS USER and POPULAR ARTIST*/
+/* /HOMEPAGE */
 /* /HOME */
 
 /* FOOTER */
@@ -272,9 +348,11 @@ footer .container {
     display: flex;
     justify-content: center;
 }
+
 .player-actions .container {
     width: 40%;
 }
+
 .icons {
     justify-content: space-evenly;
     align-items: center;
