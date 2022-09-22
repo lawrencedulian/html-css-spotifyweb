@@ -17,10 +17,11 @@
 <body>
     <!-- MAIN -->
     <main>
-        <div class="display-flex">
+        <div class="vh-reset display-flex">
             <!-- SIDEBAR -->
             <section class="container" id="sidebar">
-                <div>
+                <!-- TOP-MENU -->
+                <div class="top-menu">
                     <!-- LOGO -->
                     <div id="logo">
                         <img src="img/logo.svg" alt="Spotify Logo">
@@ -31,13 +32,13 @@
                     <div class="menu">
                         <ul>
                             <li>
-                                <a href=""><img src="" alt="">Home</a>
+                                <a href=""><img class="icon" src="img/home.svg" alt="Home">Home</a>
                             </li>
                             <li>
-                                <a href=""><img src="" alt="">Cerca</a>
+                                <a href=""><img class="icon" src="img/search.svg" alt="Search">Cerca</a>
                             </li>
                             <li>
-                                <a href=""><img src="" alt="">La tua libreria</a>
+                                <a href=""><img class="icon" src="img/libreria.svg" alt="My Library">La tua libreria</a>
                             </li>
                         </ul>
                     </div>
@@ -46,12 +47,11 @@
                     <!-- PLAYLIST -->
                     <div class="playlist">
                         <h4 class="cl-white">PLAYLIST</h4>
-                        <div class="create-playlist display-flex">
+                        <a class="create-playlist display-flex">
                             <i class="plus fa-solid fa-plus fa-2x"></i>
                             <span class="cl-gray font-weight-bold">Crea Playlist</span>
-                        </div>
-                        <ul class="new-playlist">
-                            <li><a href="">Nuova Playlist</a></li>
+                        </a>
+                        <ul class="new-playlist margin-top1">
                             <li><a href="">Nuova Playlist</a></li>
                             <li><a href="">Nuova Playlist</a></li>
                             <li><a href="">Nuova Playlist</a></li>
@@ -62,34 +62,129 @@
                     </div>
                     <!-- /PLAYLIST -->
                 </div>
-                <!-- DOWNLOAD APP - PROFILE -->
-                <div class="dl-profile">
-                    <div class="dl">
-                        <i class="cl-gray fa-regular fa-circle-down"></i>
-                        <span class="cl-gray font-weight-bold">Installa app</span>
+                
+                <!-- BOTTOM-MENU -->
+                <div class="bottom-menu">
+                    <!-- DOWNLOAD APP - PROFILE -->
+                    <div class="dl-profile">
+                        <div class="dl">
+                            <a class="install-app">
+                                <i class="cl-gray fa-regular fa-circle-down"></i>
+                                <span class="cl-gray font-weight-bold">Installa app</span>
+                            </a>
+                        </div>
+                        <div class="profile">
+                            <img class="profile-pic" src="img/profile.svg" alt="">
+                            <span class="cl-white font-weight-bold">John Doe</span>
+                        </div>
                     </div>
-                    <div class="profile">
-                        <span class="cl-white font-weight-bold">John Doe</span>
-                    </div>
-
+                    <!-- /DOWNLOAD APP - PROFILE -->
                 </div>
-                <!-- /DOWNLOAD APP - PROFILE -->
-
             </section>
             <!-- /SIDEBAR -->
             
             <!-- HOME -->
             <section id="home">
-                 <!-- HEADER -->
-                <header></header>
+                <!-- HEADER -->
+                <header>
+                    <div class="upgrade">
+                       <button class="btn">EFFETTUA L'UPGRADE</button>
+                    </div>
+                </header>
                 <!-- /HEADER -->
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus asperiores vel sapiente ipsam atque quod tempore, eaque fugit explicabo sint. Asperiores veritatis culpa in consectetur iste hic fuga consequatur soluta!
+                    At ut sapiente numquam recusandae, distinctio dolores tempora iusto ea alias harum aliquid ipsam maiores cum mollitia, fugiat et quis. Cum aperiam culpa assumenda quis maxime animi dolore enim quod.
+                    Exercitationem praesentium cum alias placeat sequi ex beatae. Esse incidunt ea eligendi quia exercitationem vel amet iusto consequatur cupiditate, dolorem aut corporis laudantium veniam officiis unde porro, sunt animi cumque?
+                    Exercitationem quas nobis provident aliquam est laudantium molestiae amet eligendi, ut illo reiciendis quos cumque recusandae omnis ab. Vero enim necessitatibus et nesciunt eveniet omnis ex quo quisquam, voluptatem id.
+                    Repellat doloribus officia delectus cum architecto, quae voluptates facere debitis! Asperiores quasi explicabo veritatis nam, pariatur quisquam minus in! Delectus ex quas perferendis accusamus cupiditate optio, esse nobis nisi quia.
+                    Dolorum id ad consequuntur minima minus, officia delectus doloremque incidunt iure beatae voluptates quisquam eos voluptatem architecto labore numquam illo ipsa laudantium harum totam sint. Deserunt dicta itaque vel sapiente.
+                    Itaque similique, placeat odio facilis id iure nam fuga atque praesentium quisquam doloremque, culpa, officiis perferendis. Eligendi expedita id iusto vero facilis aliquam nobis possimus maxime hic ex. Cumque, libero.
+                    Laborum delectus accusamus earum totam possimus, eligendi, est quaerat quisquam corporis in eum! Sunt alias repellendus earum consectetur dignissimos consequatur ipsam reiciendis similique assumenda, architecto animi id pariatur, recusandae libero!
+                    Neque animi blanditiis unde consectetur eius quo, eum quia ex! Delectus ipsa doloremque veritatis aliquid commodi, porro rem? Soluta dolore tenetur error, nesciunt architecto debitis voluptate et necessitatibus neque ratione.
+                    Autem quisquam inventore maiores delectus, repellat consequuntur tenetur molestiae dolorem vel voluptatum similique expedita, quis dolores soluta, alias unde repudiandae sequi. Sit praesentium nostrum aperiam neque numquam delectus autem eligendi.
+                    Vel illo odio repellendus illum quis molestias, error rem fuga esse, necessitatibus atque magni nihil. Sed ex magni magnam odit, velit veniam? Voluptatem consectetur alias iste! Iusto autem cum deserunt!
+                    Soluta magnam maxime aspernatur nostrum fuga nihil rem possimus voluptatibus quae cupiditate facilis rerum sapiente, beatae non cum at, quia minima necessitatibus aliquid illo! Quis quidem aperiam officiis praesentium ipsum.
+                    Itaque vel quod laudantium architecto praesentium eligendi tempora alias. Accusantium delectus repellendus impedit illum. Blanditiis veritatis modi ab laudantium voluptatum alias. Alias magnam dolorem quasi, nam quidem repudiandae omnis cumque.
+                    A aut totam eaque numquam explicabo, ex ullam porro officia veritatis exercitationem distinctio optio, corrupti itaque rerum fuga labore provident tempora soluta. Doloribus nisi cupiditate sunt quod vel quidem ea?
+                    Eum debitis quasi impedit id enim? Iste debitis aperiam omnis obcaecati fugiat, dignissimos tempore voluptates ipsa ipsam perspiciatis tenetur accusamus eos odio eligendi rerum ut, exercitationem veniam. Sed, optio nisi?
+                    Hic nulla eaque asperiores deleniti, minima itaque. Quidem rerum omnis eligendi, natus sapiente, amet itaque repellendus aspernatur laudantium a illum totam. Commodi nulla sapiente architecto assumenda error. Sit, similique nostrum.
+                    Quasi, inventore nisi. Iure odit veniam excepturi mollitia dolorem quidem voluptatem praesentium labore ipsum doloribus ratione fugit quasi amet at autem doloremque enim tenetur libero, voluptates rerum ducimus corporis! Temporibus?
+                    Nostrum ea saepe culpa debitis expedita delectus eligendi, non commodi doloremque. Eius, omnis. Ex autem numquam itaque ducimus, maiores optio aliquam esse provident distinctio quam reiciendis dignissimos vero dicta. Enim?
+                    Ratione, eius impedit. Accusamus fuga perferendis dignissimos voluptas explicabo possimus aliquid quaerat, corporis tenetur enim sapiente obcaecati quidem ratione laudantium ad et aspernatur fugit ipsa nemo minus aut rerum eos?
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                    Esse, dignissimos. Dolore nemo eos non, officiis similique numquam quasi aut vero alias rem animi maiores sequi error explicabo reprehenderit distinctio ipsum beatae totam nulla saepe quod! Ipsa, earum mollitia!
+                </p>
             </section>
             <!-- /HOME -->
         </div>
 
         <!-- FOOTER -->
         <footer id="player">
+            <div class="container">
+                <section class="playing-now display-flex">
+                    <div>
+                        <img src="img/sinister.jpeg" alt="Sinister">
+                    </div>
+                    <div class="song-title">
+                        <h3 class="cl-white">Sinister</h3>
+                        <span class="cl-gray">Brano Nome</span>
+                    </div>
+                </section>
 
+                <section class="media-player"></section>
+
+                <section class="media-player2"></section>
+            </div>
         </footer>
         <!-- /FOOTER -->
     </main>
