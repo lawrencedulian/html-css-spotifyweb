@@ -71,6 +71,9 @@ a {
     margin-top: 1em;
 }
 
+.margin-right1 {
+    margin-right: 1em;
+}
 /* PALETTE */
 .cl-gray {
     color: gray;
@@ -89,9 +92,12 @@ a {
 }
 
 .bg-darkblue {
-    color: #141922;
+    background-color: #141922;
 }
 
+.bg-white {
+    background-color: white;
+}
 /* FONT SIZE */
 .font-size1 {
     font-size: 1rem;
@@ -116,6 +122,8 @@ a {
 #sidebar {
     width: var(--sidebar-width);
     background-color: black;
+    position: relative;
+    z-index: 9999;
 }
 
 #sidebar.container {
@@ -190,7 +198,7 @@ a {
 /* DOWNLOAD APP - PROFILE */
 .dl-profile .profile {
     margin-top: 0.5em;
-    width: 200px;
+    width: 150px;
     padding-top: 0.5em;
     border-top: 1px solid gray;
 }
@@ -198,7 +206,6 @@ a {
 .profile .profile-pic {
     background-color: gray;
     border-radius: 50%;
-    padding: 0.5em;
     margin-right: 0.5em;
 }
 
@@ -232,24 +239,72 @@ header {
 /* /HOME */
 
 /* FOOTER */
-#player {
+footer {
     width: 100%;
-    /* DEBUG */
     height: var(--footer-height);
     background-color: var(--player-color);
 }
 
-#player img {
-    width: 60px;
-    height: 60px;
+footer .container {
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+/* PLAYING-NOW */
+.playing-now {
+    display: flex;
+    align-items: center;
+}
+.playing-now .album-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
 }
 
-.playing-now .song-title {
-    margin-left: 1em;
+.addfavorites-library i {
+    margin-right: 0.5em;
+}
+/* /PLAYING-NOW */
+
+/* MEDIA-PLAYER */
+.player-actions {
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
+.player-actions .container {
+    width: 40%;
+}
+.icons {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player-bar {
+    display: flex;
+    align-items: center;
+}
+
+.player-bar span {
+    margin: 0.2em;
+}
+/* /MEDIA-PLAYER */
+
+/* MEDIA-ACTIONS */
+.media-actions,
+.volume {
+    display: flex;
+    align-items: center;
+}
+
+.queue-connect a {
+    margin-right: 1em;
+}
+
+.volume i {
+    margin-right: 1em;
+}
+/* /MEDIA-ACTIONS */
 /* /FOOTER */
 
 /* /MAIN */
