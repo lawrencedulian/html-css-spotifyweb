@@ -290,7 +290,7 @@ header {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
+    width: calc(100%);
     height: var(--header-height);
     /* DEBUG */
     background-color: rgba(0, 0, 0, 0.3);
@@ -563,7 +563,7 @@ footer .container {
 
     .menu-screenxs {
         display: block;
-        width: calc(100% - var(--b));
+        width: calc(100% - var(--siderbar-widthxs));
     }
 
     .menu-screenxs .icon {
@@ -575,9 +575,10 @@ footer .container {
         text-align: center;
     }
 
-    .home {
+    #home {
         width: calc(100% - var(--sidebar-widthxs));
     }
+
     .recently-played .card {
         width: calc(100% / 2 - 1em);
         margin-right: 1em;
